@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenis-Jenis Kucing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startClock()">
+
+    <!-- BANNER -->
+    <header class="banner">
+        <h1>🐾 Dunia Kucing</h1>
+        <p class="subtitle">Jenis-Jenis Kucing Populer</p>
+        <div id="clock"></div>
+    </header>
+
+    <!-- JENIS KUCING -->
+    <section class="cats">
+
+        <div class="card" onclick="toggleDesc(this)">
+            <img src="gambar/persia1.jpg" alt="Persia">
+            <h3>Persia</h3>
+            <p class="desc">
+                Kucing Persia memiliki bulu panjang, wajah bulat, dan sifat tenang.
+                Sangat cocok sebagai kucing rumahan.
+            </p>
+        </div>
+
+        <div class="card" onclick="toggleDesc(this)">
+            <img src="gambar/maine coon1.jpg" alt="Maine Coon">
+            <h3>Maine Coon</h3>
+            <p class="desc">
+                Maine Coon adalah kucing berukuran besar yang ramah,
+                cerdas, dan mudah beradaptasi.
+            </p>
+        </div>
+
+        <div class="card" onclick="toggleDesc(this)">
+            <img src="gambar/bengal1.jpg" alt="Bengal">
+            <h3>Bengal</h3>
+            <p class="desc">
+                Kucing Bengal memiliki pola eksotis seperti macan tutul
+                dan sangat aktif.
+            </p>
+        </div>
+
+        <div class="card" onclick="toggleDesc(this)">
+            <img src="gambar/siamese1.jpg" alt="Siamese">
+            <h3>Siamese</h3>
+            <p class="desc">
+                Siamese terkenal dengan mata biru dan suara khas,
+                sangat setia pada pemiliknya.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section">
+        <h2>Form Komentar</h2>
+
+        <form onsubmit="kirimForm(event)">
+            <label>Nama</label>
+            <input type="text" id="nama" required>
+
+            <label>Kucing Favorit</label>
+            <select id="favorit">
+                <option>Persia</option>
+                <option>Maine Coon</option>
+                <option>Bengal</option>
+                <option>Siamese</option>
+            </select>
+
+            <label>Pesan</label>
+            <textarea id="pesan"></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p id="output"></p>
+    </section>
+
+    <footer>
+        <p>© 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
